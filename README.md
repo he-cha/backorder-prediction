@@ -124,7 +124,7 @@ See [the findings and audit](reports/FINDINGS.md) for methodological issues and 
 python scripts/summarize_results.py
 ```
 
-This reproduces the arithmetic, not model training. To rerun the historical notebooks, install the packages in `requirements.txt`, obtain the two source CSVs independently, and set `BACKORDER_DATA_DIR` to their directory. Run notebooks in order, using the repository root as the working directory. Expect expensive grid searches and LOF fitting. The packages are an unpinned dependency inventory because the original environment was not captured.
+This reproduces the arithmetic, not model training. To rerun the historical notebooks, install the packages in `requirements.txt`, obtain the two source CSVs independently, and set `BACKORDER_DATA_DIR` to their directory. Run notebooks in order, using the repository root as the working directory. Expect expensive grid searches and LOF fitting. Dependencies target the new benchmark environment; the historical estimator pickles report scikit-learn 1.7.2 and were not used for the new comparison.
 
 The source CSVs and uploaded pickles are not bundled. Notebook outputs are historical and explicitly labeled. Corrections to imports, variable references, and configurable data paths improve execution readiness; the modeling methodology has not been silently replaced or rerun.
 

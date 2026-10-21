@@ -1,0 +1,32 @@
+{
+  "Logistic regression \u2014 sampled holdout": [
+    4733,
+    2043,
+    206,
+    2053
+  ],
+  "Random Forest \u2014 sampled holdout": [
+    6194,
+    582,
+    241,
+    2018
+  ],
+  "Gradient boosting \u2014 sampled holdout": [
+    6270,
+    506,
+    539,
+    1720
+  ],
+  "Random Forest \u2014 independent test": [
+    220209,
+    19179,
+    616,
+    2072
+  ],
+  "Random Forest \u2014 filtered test": [
+    208438,
+    18885,
+    595,
+    2054
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "scope": "Reused enriched sample only; not an independent production evaluation",
+  "selection": "Highest validation average precision; threshold maximizes validation F1",
+  "seed": 2027,
+  "grouping": "Identical predictor rows kept in the same partition",
+  "source_sha256": "f1f8f4bc23da9e824d1d80513551fd2d7ac10b73a336c9d286b34e87c325ff85",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "partitions": {
+    "train": {
+      "rows": 26993,
+      "positives": 6777,
+      "prevalence": 0.2510650909495054
+    },
+    "validation": {
+      "rows": 8895,
+      "positives": 2227,
+      "prevalence": 0.2503653738055087
+    },
+    "test": {
+      "rows": 9284,
+      "positives": 2289,
+      "prevalence": 0.246553209823352
+    }
+  },
+  "candidates": [
+    {
+      "name": "Reference RF + SelectKBest",
+      "engineered": false,
+      "validation": {
+        "threshold": 0.47836688663294863,
+        "precision": 0.7638668779714739,
+        "recall": 0.8657386618769646,
+        "f1": 0.8116186066091349,
+        "average_precision": 0.874650583528129,
+        "roc_auc": 0.9533021550157861,
+        "confusion_matrix": [
+          [
+            6072,
+            596
+          ],
+          [
+            299,
+            1928
+          ]
+        ],
+        "alerts": 2524
+      },
+      "seconds": 6.11
+    },
+    {
+      "name": "Engineered Random Forest",
+      "engineered": true,
+      "validation": {
+        "threshold": 0.354375,
+        "precision": 0.7685884691848907,
+        "recall": 0.8679838347552762,
+        "f1": 0.8152678194854491,
+        "average_precision": 0.878541082799578,
+        "roc_auc": 0.9549179521976161,
+        "confusion_matrix": [
+          [
+            6086,
+            582
+          ],
+          [
+            294,
+            1933
+          ]
+        ],
+        "alerts": 2515
+      },
+      "seconds": 39.18
+    },
+    {
+      "name": "Histogram gradient boosting",
+      "engineered": false,
+      "validation": {
+        "threshold": 0.378089061467687,
+        "precision": 0.776475512766848,
+        "recall": 0.8329591378536148,
+        "f1": 0.8037261698440208,
+        "average_precision": 0.8676767699234955,
+        "roc_auc": 0.9491200323024754,
+        "confusion_matrix": [
+          [
+            6134,
+            534
+          ],
+          [
+            372,
+            1855
+          ]
+        ],
+        "alerts": 2389
+      },
+      "seconds": 1.77
+    },
+    {
+      "name": "Engineered histogram boosting",
+      "engineered": true,
+      "validation": {
+        "threshold": 0.40516780778880224,
+        "precision": 0.7875915553640672,
+        "recall": 0.820835204310732,
+        "f1": 0.8038698328935796,
+        "average_precision": 0.8700287361150837,
+        "roc_auc": 0.9502510027855229,
+        "confusion_matrix": [
+          [
+            6175,
+            493
+          ],
+          [
+            399,
+            1828
+          ]
+        ],
+        "alerts": 2321
+      },
+      "seconds": 2.15
+    }
+  ],
+  "selected": "Engineered Random Forest",
+  "test": {
+    "reference": {
+      "name": "Reference RF + SelectKBest",
+      "tuned": {
+        "threshold": 0.47836688663294863,
+        "precision": 0.7568702290076336,
+        "recall": 0.8663171690694627,
+        "f1": 0.8079038500712976,
+        "average_precision": 0.8799469737507337,
+        "roc_auc": 0.9564145393748452,
+        "confusion_matrix": [
+          [
+            6358,
+            637
+          ],
+          [
+            306,
+            1983
+          ]
+        ],
+        "alerts": 2620
+      },
+      "default": {
+        "threshold": 0.5,
+        "precision": 0.7670321064996085,
+        "recall": 0.8558322411533421,
+        "f1": 0.8090026842865992,
+        "average_precision": 0.8799469737507337,
+        "roc_auc": 0.9564145393748452,
+        "confusion_matrix": [
+          [
+            6400,
+            595
+          ],
+          [
+            330,
+            1959
+          ]
+        ],
+        "alerts": 2554
+      }
+    },
+    "selected": {
+      "name": "Engineered Random Forest",
+      "tuned": {
+        "threshold": 0.354375,
+        "precision": 0.7734806629834254,
+        "recall": 0.8562691131498471,
+        "f1": 0.8127721335268505,
+        "average_precision": 0.8780490171198895,
+        "roc_auc": 0.9546650840596057,
+        "confusion_matrix": [
+          [
+            6421,
+            574
+          ],
+          [
+            329,
+            1960
+          ]
+        ],
+        "alerts": 2534
+      },
+      "default": {
+        "threshold": 0.5,
+        "precision": 0.828175519630485,
+        "recall": 0.7833114897335081,
+        "f1": 0.8051189941625505,
+        "average_precision": 0.8780490171198895,
+        "roc_auc": 0.9546650840596057,
+        "confusion_matrix": [
+          [
+            6623,
+            372
+          ],
+          [
+            496,
+            1793
+          ]
+        ],
+        "alerts": 2165
+      }
+    }
+  }
+}
