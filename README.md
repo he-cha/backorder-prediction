@@ -7,6 +7,14 @@ How can a business catch potential shortages without overwhelming its team with 
 
 ![New benchmark: precision–recall and model comparison](reports/sample_benchmark.png)
 
+## Portfolio visual story
+
+Five new figures explain inventory coverage, alert threshold tradeoffs, false alarms versus missed backorders, historical review workload, and the effect of enriched sampling.
+
+![Inventory coverage and observed sampled backorders](reports/portfolio/01_inventory_coverage.png)
+
+[View the complete visual case study and downloadable PNG/SVG figures](reports/portfolio/README.md). The gallery includes chart explanations, aggregate data, and a reproducible export script. Sample-based associations are labeled separately from historical independent-test results.
+
 ## New experiment: measured improvements
 
 **The engineered Random Forest delivered a modest F1 gain and fewer false alarms on a reserved portion of the supplied sample.** Both models below were trained afresh on the same partition; their thresholds were chosen on validation data before evaluating this partition.
