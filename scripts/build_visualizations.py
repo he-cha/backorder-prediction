@@ -1,4 +1,4 @@
-"""Export portfolio charts. Run with --sample pointing to trusted sample-data.pkl.
+"""Export analysis charts. Run with --sample pointing to trusted sample-data.pkl.
 Only aggregates are exported; no source rows or fitted models are published.
 """
 import argparse
@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'reports/portfolio'
+OUT=ROOT/'reports/visualizations'
 TEAL='#167d8d'; COPPER='#bd653f'; NAVY='#17334c'; GRAY='#657482'
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'axes.labelcolor':NAVY,'text.color':NAVY,'axes.titleweight':'bold','savefig.facecolor':'#ffffff','svg.fonttype':'none'})
 

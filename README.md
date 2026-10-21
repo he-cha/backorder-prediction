@@ -7,13 +7,13 @@ How can a business catch potential shortages without overwhelming its team with 
 
 ![New benchmark: precision–recall and model comparison](reports/sample_benchmark.png)
 
-## Portfolio visual story
+## Visual findings
 
 Five new figures explain inventory coverage, alert threshold tradeoffs, false alarms versus missed backorders, historical review workload, and the effect of enriched sampling.
 
-![Inventory coverage and observed sampled backorders](reports/portfolio/01_inventory_coverage.png)
+![Inventory coverage and observed sampled backorders](reports/visualizations/01_inventory_coverage.png)
 
-[View the complete visual case study and downloadable PNG/SVG figures](reports/portfolio/README.md). The gallery includes chart explanations, aggregate data, and a reproducible export script. Sample-based associations are labeled separately from historical independent-test results.
+[View the complete visual case study and downloadable PNG/SVG figures](reports/visualizations/README.md). The gallery includes chart explanations, aggregate data, and a reproducible export script. Sample-based associations are labeled separately from historical independent-test results.
 
 ## New experiment: measured improvements
 
@@ -138,4 +138,4 @@ The source CSVs and uploaded pickles are not bundled. Notebook outputs are histo
 
 ## Attribution
 
-Developed in a University of Missouri Data Science and Analytics course using supplied assignment scaffolding and dataset access. This portfolio edition removes classroom navigation prompts, retains the analysis, and adds a results audit and presentation improvements. No software or dataset license is asserted pending confirmation of ownership and source terms.
+Developed in a University of Missouri Data Science and Analytics course using supplied assignment scaffolding and dataset access. This edition removes classroom navigation prompts, retains the analysis, and adds a results audit and presentation improvements. No software or dataset license is asserted pending confirmation of ownership and source terms.
